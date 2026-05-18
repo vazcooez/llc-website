@@ -9,6 +9,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -35,10 +36,24 @@
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="container narrow">
-        <p class="eyebrow">About Vazcooez</p>
-        <h1 class="display">We build software<br/>that earns the right<br/>to be used.</h1>
+    <section class="hero hero-split">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">About Vazcooez</p>
+          <h1 class="display">We build software<br/>that earns the right<br/>to be used.</h1>
+        </div>
+        <figure class="hero-figure">
+          <img
+            src="https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&w=1200&q=70"
+            srcset="https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&w=600&q=70 600w,
+                    https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&w=1200&q=70 1200w,
+                    https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&w=1800&q=70 1800w"
+            sizes="(max-width: 900px) 100vw, 50vw"
+            alt="A craftsman at work"
+            loading="eager"
+            decoding="async"
+            width="1200" height="800" />
+        </figure>
       </div>
     </section>
 
@@ -80,9 +95,9 @@
 
         <h2 class="h2">What we&rsquo;re building</h2>
         <p>
-          Our first product, <a href="xinbox.html">Xinbox</a>, routes emails from a
-          shared inbox to the right Slack channel automatically &mdash; so teams
-          stop triaging and start replying.
+          Our first product, <a href="xinbox.html">Xinbox</a>, lets you describe each
+          Slack channel in plain English and uses AI to route every incoming email
+          to the right one &mdash; so teams stop triaging and start replying.
         </p>
         <p>More is on the way. <a href="index.html#contact">Get in touch</a> if you want to hear about it first.</p>
       </div>
@@ -124,7 +139,7 @@
       </div>
     </div>
     <div class="container footer-base">
-      <p class="muted small">&copy; <span id="year">2026</span> Vazcooez LLC. All rights reserved.</p>
+      <p class="muted small">&copy; <span id="year">2026</span> Vazcooez LLC. All rights reserved. <span class="dot-sep">&middot;</span> Photography via <a href="https://unsplash.com/?utm_source=vazcooez&utm_medium=referral" rel="noopener">Unsplash</a>.</p>
     </div>
   </footer>
 

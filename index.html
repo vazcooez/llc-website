@@ -13,6 +13,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -39,20 +40,34 @@
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="container">
-        <p class="eyebrow">Vazcooez LLC</p>
-        <h1 class="display">
-          Software that gets<br/>out of your way.
-        </h1>
-        <p class="lede">
-          We build small, careful tools that remove friction from work.
-          Each one ships in about two weeks, then keeps getting quieter.
-        </p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="xinbox.html">Meet Xinbox</a>
-          <a class="btn btn-ghost" href="#values">What we believe</a>
+    <section class="hero hero-split">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Vazcooez LLC</p>
+          <h1 class="display">
+            Software that gets<br/>out of your way.
+          </h1>
+          <p class="lede">
+            We build small, careful tools that remove friction from work.
+            Each one ships in about two weeks, then keeps getting quieter.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="xinbox.html">Meet Xinbox</a>
+            <a class="btn btn-ghost" href="#values">What we believe</a>
+          </div>
         </div>
+        <figure class="hero-figure">
+          <img
+            src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?auto=format&fit=crop&w=1200&q=70"
+            srcset="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?auto=format&fit=crop&w=600&q=70 600w,
+                    https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?auto=format&fit=crop&w=1200&q=70 1200w,
+                    https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?auto=format&fit=crop&w=1800&q=70 1800w"
+            sizes="(max-width: 900px) 100vw, 50vw"
+            alt="A quiet desk with morning light"
+            loading="eager"
+            decoding="async"
+            width="1200" height="800" />
+        </figure>
       </div>
     </section>
 
@@ -100,6 +115,19 @@
       </div>
     </section>
 
+    <section class="image-band" aria-hidden="true">
+      <img
+        src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=2000&q=70"
+        srcset="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=1200&q=70 1200w,
+                https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=2000&q=70 2000w,
+                https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=2800&q=70 2800w"
+        sizes="100vw"
+        alt=""
+        loading="lazy"
+        decoding="async"
+        width="2000" height="700" />
+    </section>
+
     <section class="section">
       <div class="container">
         <p class="eyebrow">Products</p>
@@ -108,14 +136,15 @@
           <div class="product-card-body">
             <span class="badge">Live</span>
             <h3>Xinbox</h3>
-            <p>Route emails from a shared inbox to the right Slack channel, automatically. No more triage threads, no more missed messages.</p>
+            <p>Describe each Slack channel in plain English. AI classifies every incoming email and routes it to the channel that should see it &mdash; no rules, no regex, no triage.</p>
             <span class="link-arrow">Learn more &rarr;</span>
           </div>
           <div class="product-card-visual" aria-hidden="true">
             <div class="mock">
-              <div class="mock-row"><span class="dot dot-a"></span><span>support@</span><span class="arrow">&rarr;</span><span>#cx-tier1</span></div>
-              <div class="mock-row"><span class="dot dot-b"></span><span>billing@</span><span class="arrow">&rarr;</span><span>#finance</span></div>
-              <div class="mock-row"><span class="dot dot-c"></span><span>sales@</span><span class="arrow">&rarr;</span><span>#deals</span></div>
+              <div class="mock-caption">AI-classified &rarr; routed to Slack</div>
+              <div class="mock-row"><span class="dot dot-a"></span><span>Refund request</span><span class="arrow">&rarr;</span><span>#billing</span></div>
+              <div class="mock-row"><span class="dot dot-b"></span><span>Bug report</span><span class="arrow">&rarr;</span><span>#engineering</span></div>
+              <div class="mock-row"><span class="dot dot-c"></span><span>Demo request</span><span class="arrow">&rarr;</span><span>#sales</span></div>
             </div>
           </div>
         </a>
@@ -170,7 +199,7 @@
       </div>
     </div>
     <div class="container footer-base">
-      <p class="muted small">&copy; <span id="year">2026</span> Vazcooez LLC. All rights reserved.</p>
+      <p class="muted small">&copy; <span id="year">2026</span> Vazcooez LLC. All rights reserved. <span class="dot-sep">&middot;</span> Photography via <a href="https://unsplash.com/?utm_source=vazcooez&utm_medium=referral" rel="noopener">Unsplash</a>.</p>
     </div>
   </footer>
 
